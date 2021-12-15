@@ -1,0 +1,36 @@
+<h1 id='tema'>Ruh Ordo</h1>
+<p id='text'>Welcome ro Ruh Ordo in Yssyk Kul</p>
+<img id='photo' src='ruhordo.jpg' height='400'>
+<br>
+<br>
+<button onclick="change()"> Next </button>
+<button onclick="ch()"> Back </button>
+<script>
+    function change() {
+        document.getElementById("photo").src = ' tashrabat.jpg ';
+        document.getElementById("tema").innerHTML = 'Tash Rabat ';
+        document.getElementById("text").innerHTML = 'Welcome to Tash Rabat ';
+        document.getElementById("text").style.color = 'blue ';
+        document.body.style.background = 'white ';
+    }
+</script>
+<script>
+    function ch() {
+        document.getElementById("photo").src = 'ruhordo.jpg ';
+        document.getElementById("tema").innerHTML = 'Ruh Ordo ';
+        document.getElementById("text").innerHTML = 'Welcome ro Ruh Ordo in Yssyk Kul ';
+        document.getElementById("text").style.color = 'blue ';
+        document.body.style.background = 'white ';
+    }
+</script>
+
+<h1 id='counter'>0</h1>
+<button onclick="plus()">Add person for reservation</button>
+<script>
+    var c = 0
+
+    function plus() {
+        c++;
+        document.getElementById("counter").innerHTML = c;
+    }
+</script>
